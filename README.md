@@ -59,10 +59,20 @@ yarn test --coverage
 
 ## Estrutura de Pastas
 
-### api: Centraliza a chamada à API do New York Times.
-### common: Centraliza hooks, models e alguns utils (arquivos TypeScript que exportam algum método).
-### components: Centraliza componentes que podem ser utilizados em mais de um lugar dentro da aplicação, seus devidos testes unitários e possíveis hooks próprios.
-### contexts: Centraliza os contextos que o API context do React pode precisar.
-### pages: Centraliza as páginas da aplicação, seus devidos testes unitários e possíveis hooks próprios.
+### api: 
+Centraliza a chamada à API do New York Times.
+
+### common:
+Centraliza hooks, models e alguns utils (arquivos TypeScript que exportam algum método).
+
+### components: 
+Centraliza componentes que podem ser utilizados em mais de um lugar dentro da aplicação, seus devidos testes unitários e possíveis hooks próprios.
+
+### contexts: 
+Centraliza os contextos que o API context do React pode precisar.
+
+### pages: 
+Centraliza as páginas da aplicação, seus devidos testes unitários e possíveis hooks próprios.
+
 ### Todas estas pastas estão dentro de uma pasta de nome src.
 ### Na raiz existe uma pasta de nome types onde é centralizado as definições de tipos que precisaram de alguma customização ou extensão.
