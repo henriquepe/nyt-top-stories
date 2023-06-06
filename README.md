@@ -5,7 +5,6 @@ Este é um projeto desenvolvido em React Native (versão 0.71.8) e utilizando o 
 Este projeto tem as seguintes dependências:
 
 ```
-json
 "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
@@ -32,6 +31,27 @@ json
     "@types/jest": "^29.5.2"
 }
 ```
+React Native: https://reactnative.dev/docs/0.71/getting-started
+@react-navigation/native: https://reactnavigation.org/docs/6.x/getting-started
+@react-navigation/native-stack: https://reactnavigation.org/docs/6.x/stack-navigator/
+@testing-library/react-hooks: https://react-hooks-testing-library.com/
+@testing-library/react-native: https://testing-library.com/docs/react-native-testing-library/intro
+@types/react: https://www.npmjs.com/package/@types/react
+Expo: https://docs.expo.dev/
+Expo Font: https://docs.expo.dev/guides/using-custom-fonts/
+Expo Splash Screen: https://docs.expo.dev/versions/latest/sdk/splash-screen/
+Expo Status Bar: https://docs.expo.dev/versions/latest/sdk/status-bar/
+Jest: https://jestjs.io/docs/getting-started
+Jest Expo: https://www.npmjs.com/package/jest-expo
+React: https://reactjs.org/docs/getting-started.html
+React Native Paper: https://callstack.github.io/react-native-paper/index.html
+React Native Safe Area Context: https://www.npmjs.com/package/react-native-safe-area-context
+React Native Screens: https://github.com/software-mansion/react-native-screens
+React Native Webview: https://github.com/react-native-webview/react-native-webview
+Styled Components: https://styled-components.com/docs
+TypeScript: https://www.typescriptlang.org/docs/
+@babel/core: https://babeljs.io/docs/en/
+@types/jest: https://www.npmjs.com/package/@types/jest
 
 ## Iniciando o Projeto
 Siga as etapas abaixo para iniciar o projeto:
@@ -74,5 +94,9 @@ Centraliza os contextos que o API context do React pode precisar.
 ### pages: 
 Centraliza as páginas da aplicação, seus devidos testes unitários e possíveis hooks próprios.
 
-### Todas estas pastas estão dentro de uma pasta de nome src.
-### Na raiz existe uma pasta de nome types onde é centralizado as definições de tipos que precisaram de alguma customização ou extensão.
+**Todas estas pastas estão dentro de uma pasta de nome src.**
+**Na raiz existe uma pasta de nome types onde é centralizado as definições de tipos que precisaram de alguma customização ou extensão.**
+
+## Material Design
+Essa aplicação foi construída utilizando componentes Material Design, disponibilizados pela biblioteca react-native-paper.
+Documentação: https://callstack.github.io/react-native-paper/index.html
