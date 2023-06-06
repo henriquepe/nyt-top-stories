@@ -31,6 +31,7 @@ Este projeto tem as seguintes dependências:
     "@types/jest": "^29.5.2"
 }
 ```
+
 React Native: https://reactnative.dev/docs/0.71/getting-started
 @react-navigation/native: https://reactnavigation.org/docs/6.x/getting-started
 @react-navigation/native-stack: https://reactnavigation.org/docs/6.x/stack-navigator/
@@ -97,6 +98,11 @@ Centraliza as páginas da aplicação, seus devidos testes unitários e possíve
 **Todas estas pastas estão dentro de uma pasta de nome src.**
 **Na raiz existe uma pasta de nome types onde é centralizado as definições de tipos que precisaram de alguma customização ou extensão.**
 
+
 ## Material Design
-Essa aplicação foi construída utilizando componentes Material Design, disponibilizados pela biblioteca react-native-paper.
-Documentação: https://callstack.github.io/react-native-paper/index.html
+Essa aplicação foi construída utilizando componentes Material Design, estes foram disponibilizados pelo react-native-paper.
+Documentação: 
+
+## Hook Pattern
+A abordagem para construir aplicativos React Native difere da criação de aplicativos nativos iOS e Android isoladamente. Para aproveitar a arquitetura MVC, utilizamos o `hook pattern`. Esse padrão envolve a abstração de toda a lógica de controle e estado dentro do hook, cumprindo a função do Model e do Controller em paradigmas diferentes.
+O componente em si busca atender ao conceito da VIEW, que é basicamente a interface do usuário, sem a responsabilidade de controle de estado e lógica. Dessa forma, alinhamos os benefícios da arquitetura MVC com as particularidades do desenvolvimento em React Native.
