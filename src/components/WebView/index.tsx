@@ -1,3 +1,4 @@
+import React from "react";
 import { WebView as ReactNativeWebView } from "react-native-webview";
 import { WebViewProps } from "./types";
 

@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start",
+    "android": "API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start --android",
+    "ios": "API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start --ios",
     "web": "expo start --web",
     "test": "jest --verbose --silent",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "storybook-generate": "sb-rn-get-stories",
+    "storybook-watch": "sb-rn-watcher",
+    "storybook": "sb-rn-get-stories && STORYBOOK_ENABLED='true' API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start",
+    "storybook:ios": "sb-rn-get-stories && STORYBOOK_ENABLED='true' API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start --ios",
+    "storybook:android": "sb-rn-get-stories && STORYBOOK_ENABLED='true' API_URL='https://api.nytimes.com/svc/topstories/v2' API_KEY='AEhGaMLNBV3CtIxuGBRzPPBaMysI9UU2' expo start --android"
   },
   "jest": {
     "preset": "jest-expo",
@@ -21,6 +25,9 @@
     ]
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.17.11",
+    "@react-native-community/datetimepicker": "6.7.3",
+    "@react-native-community/slider": "4.4.2",
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "@testing-library/react-hooks": "^8.0.1",
@@ -44,12 +51,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "@storybook/addon-essentials": "^7.0.20",
-    "@storybook/addon-interactions": "^7.0.20",
-    "@storybook/addon-links": "^7.0.20",
-    "@storybook/blocks": "^7.0.20",
-    "@storybook/react": "^7.0.20",
-    "@storybook/react-webpack5": "^7.0.20",
+    "@storybook/addon-actions": "6.5.14",
+    "@storybook/addon-controls": "6.5.14",
+    "@storybook/addon-ondevice-actions": "6.5.1",
+    "@storybook/addon-ondevice-controls": "6.5.1",
+    "@storybook/react-native": "6.5.1",
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/axios": "^0.14.0",
     "@types/jest": "^29.5.2",

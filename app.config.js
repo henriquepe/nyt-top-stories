@@ -29,6 +29,7 @@ module.exports = {
     extra: {
       API_URL: process.env.API_URL,
       API_KEY: process.env.API_KEY,
+      STORYBOOK_ENABLED: process.env.STORYBOOK_ENABLED,
       eas: {
         projectId: "04f8e71e-dc2e-400d-bd9d-9c7e57f320d6",
       },

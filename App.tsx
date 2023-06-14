@@ -1,3 +1,5 @@
+import React from "react";
+import Constants from "expo-constants";
 import { PaperProvider } from "react-native-paper";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
@@ -9,7 +11,7 @@ import { useTheme } from "./src/common/hooks/use-theme";
 import { ThemeContext } from "./src/contexts/ThemeContext";
 import { ThemeProvider } from "styled-components/native";
 
-export default function App() {
+function App() {
   const { handleToggleTheme, currentColorScheme } = useTheme();
   const [fontsLoaded] = useFonts(fonts);
 
@@ -45,3 +47,11 @@ export default function App() {
     </ThemeProvider>
   );
 }
+
+let AppEntryPoint = App;
+
+if (Constants.expoConfig.extra.STORYBOOK_ENABLED === "true") {
+  AppEntryPoint = require("./.storybook").default;
+}
+
+export default AppEntryPoint;
