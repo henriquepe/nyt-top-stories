@@ -68,6 +68,21 @@ yarn
 npx expo start
 ```
 
+## Storybook
+Este projeto possui Storybook para navegar e conhecer seus componentes.
+
+Para executar o aplicativo utilizando o storybook execute o seguinte script:
+
+Para ios:
+```
+yarn storybook:ios
+```
+
+Para android: 
+```
+yarn storybook:android
+```
+
 
 ## Executando Testes Unitários
 Para executar os testes unitários, use o script test que já está configurado. Para obter a cobertura de testes, adicione a flag --coverage.
@@ -76,7 +91,6 @@ Para executar os testes unitários, use o script test que já está configurado.
 yarn test
 yarn test --coverage
 ```
-
 
 ## Estrutura de Pastas
 
@@ -101,7 +115,7 @@ Centraliza as páginas da aplicação, seus devidos testes unitários e possíve
 
 ## Material Design
 Essa aplicação foi construída utilizando componentes Material Design, estes foram disponibilizados pelo react-native-paper.
-Documentação: 
+Documentação: https://callstack.github.io/react-native-paper/index.html
 
 ## Hook Pattern
 A abordagem para construir aplicativos React Native difere da criação de aplicativos nativos iOS e Android isoladamente. Para aproveitar a arquitetura MVC, utilizamos o `hook pattern`. Esse padrão envolve a abstração de toda a lógica de controle e estado dentro do hook, cumprindo a função do Model e do Controller em paradigmas diferentes.
