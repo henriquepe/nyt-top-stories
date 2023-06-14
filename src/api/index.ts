@@ -1,5 +1,6 @@
 import Constants from "expo-constants";
 import { TopStory } from "../common/models/TopStory";
+import { httpRequestHandler } from "./middlewares/httpRequestHandler";
 
 const API_URL = Constants.manifest.extra.API_URL;
 const API_KEY = Constants.manifest.extra.API_KEY;
@@ -9,8 +10,10 @@ export const getTopStories = async (): Promise<{
   data?: TopStory[];
 }> => {
   try {
-    const response = await fetch(`${API_URL}/arts.json?api-key=${API_KEY}`);
-    const data = await response.json();
+    const data = await httpRequestHandler({
+      method: "GET",
+      url: `${API_URL}/arts.json?api-key=${API_KEY}`,
+    });
     return {
       success: true,
       data: data.results,
