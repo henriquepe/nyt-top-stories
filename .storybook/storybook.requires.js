@@ -49,7 +49,6 @@ const getStories = () => {
   return {
     "./src/components/NewsCard/index.stories.tsx": require("../src/components/NewsCard/index.stories.tsx"),
     "./src/components/stories/Button.stories.tsx": require("../src/components/stories/Button.stories.tsx"),
-    "./src/components/stories/Home.stories.tsx": require("../src/components/stories/Home.stories.tsx"),
   };
 };
 
